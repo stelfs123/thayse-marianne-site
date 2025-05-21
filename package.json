@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Site de serviços de estética e massoterapia da Thayse Marianne",
   "main": "server.js",
-"scripts": {
-  "start": "node server.js",
-  "build": "cd client && npm install && npm run build && cd ..",
-  "postinstall": "npm run build"
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "cd client && npm install && npm run build && cd ..",
+    "postinstall": "npm run build"
   },
   "engines": {
     "node": "16.x"
@@ -26,3 +27,4 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
+}
