@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo(a) ao Thayse Marianne</title>
+  <style>
+    /* Estilos responsivos */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #f8f4ff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 0 0 5px 5px;
+      border: 1px solid #f0f0f0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+    .button {
+      display: inline-block;
+      background-color: #9c27b0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .features {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bem-vindo(a) ao Thayse Marianne!</h1>
+    </div>
+    <div class="content">
+      <p>Olá, {{client_name}}!</p>
+      
+      <p>É com grande prazer que damos as boas-vindas a você em nossa plataforma. Seu cadastro foi realizado com sucesso!</p>
+      
+      <p>Agora você tem acesso a todos os nossos serviços de estética e massoterapia, com a facilidade de agendar suas sessões online.</p>
+      
+      <div class="features">
+        <h3>O que você pode fazer na nossa plataforma:</h3>
+        <ul>
+          <li>Agendar sessões com facilidade</li>
+          <li>Acompanhar seu histórico de atendimentos</li>
+          <li>Conhecer nossos planos de assinatura exclusivos</li>
+          <li>Gerenciar seu perfil e preferências</li>
+          <li>Receber lembretes de agendamentos</li>
+        </ul>
+      </div>
+      
+      <p>Para começar a aproveitar todos os benefícios, acesse sua conta agora mesmo:</p>
+      
+      <div style="text-align: center;">
+        <a href="{{login_link}}" class="button">Acessar Minha Conta</a>
+      </div>
+      
+      <p>Estamos à disposição para qualquer dúvida ou assistência que você possa precisar.</p>
+      
+      <p>Atenciosamente,<br>
+      Thayse Marianne</p>
+    </div>
+    <div class="footer">
+      <p>Este é um email automático, por favor não responda.</p>
+      <p>© 2025 Thayse Marianne. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</body>
+</html>

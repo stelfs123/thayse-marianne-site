@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Agendamento</title>
+  <style>
+    /* Estilos responsivos */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #f8f4ff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 0 0 5px 5px;
+      border: 1px solid #f0f0f0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+    .button {
+      display: inline-block;
+      background-color: #9c27b0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .details {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Agendamento Confirmado</h1>
+    </div>
+    <div class="content">
+      <p>Olá, {{client_name}}!</p>
+      
+      <p>Seu agendamento foi confirmado com sucesso. Abaixo estão os detalhes:</p>
+      
+      <div class="details">
+        <p><strong>Serviço:</strong> {{service_name}}</p>
+        <p><strong>Data:</strong> {{appointment_date}}</p>
+        <p><strong>Horário:</strong> {{appointment_time}}</p>
+        <p><strong>Duração:</strong> {{duration}} minutos</p>
+      </div>
+      
+      <p>Caso precise reagendar ou cancelar, por favor, faça isso com pelo menos 24 horas de antecedência.</p>
+      
+      <a href="{{appointment_link}}" class="button">Ver Detalhes do Agendamento</a>
+      
+      <p>Estamos ansiosos para recebê-la!</p>
+      
+      <p>Atenciosamente,<br>
+      Thayse Marianne</p>
+    </div>
+    <div class="footer">
+      <p>Este é um email automático, por favor não responda.</p>
+      <p>© 2025 Thayse Marianne. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</body>
+</html>
